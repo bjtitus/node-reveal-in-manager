@@ -15,11 +15,12 @@ module.exports = (path, callback) ->
 
   stderr = ''
   child.stderr.on 'data', (data) -> stderr += data
-  child.on 'close', (code) ->
-    if code is 0
-      callback null
-    else
-      callback stderr
+  if callback
+    child.on 'close', (code) ->
+      if code is 0
+        callback null
+      else
+        callback stderr
 
 escape = (string) ->
   return '"' + string.replace(/"/g, '\\\"') + '"'
