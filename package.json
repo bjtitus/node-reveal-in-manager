@@ -1,0 +1,35 @@
+{
+  "name": "reveal-in-manager",
+  "main": "./lib/reveal.js",
+  "version": "0.0.1",
+  "description": "Node module for opening files in the host operating system's file manager",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bjtitus/node-reveal-in-manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bjtitus/node-reveal-in-manager/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/bjtitus/node-reveal-in-manager/raw/master/LICENSE.md"
+    }
+  ],
+  "scripts": {
+    "prepublish": "grunt prepublish",
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha --require coffee-script --compilers coffee:coffee-script --recursive ./test"
+  },
+  "engines": {
+    "atom": ">0.39.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-cli": "~0.1.8",
+    "grunt": "~0.4.1",
+    "grunt-shell": "~0.2.2",
+    "grunt-coffeelint": "0.0.6",
+    "mocha": "*",
+    "coffee-script": "~1.6.3"
+  }
+}
