@@ -1,7 +1,7 @@
 {
   "name": "reveal-in-manager",
   "main": "./lib/reveal.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node module for opening files in the host operating system's file manager",
   "repository": {
     "type": "git",
